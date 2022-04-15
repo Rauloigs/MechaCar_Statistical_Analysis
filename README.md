@@ -25,7 +25,7 @@ As we know, each *Pr(>|t|)* represents the probability that each coeffincient co
 
 
 ### 2. Is the slope of the linear model considered to be zero? Why or why not?
-As you will see in the results of point three, our *p-value* is *5.35e-11*. This parameter is sufficient to reject the null hypothesis, which means that the slope of our linear model is not zero. 
+As you will see in the results of point three, our *p-value* is *5.35e-11*. Assuming a significance level *0.05%* with our *p-value* is sufficient to reject the null hypothesis, which means that the slope of our linear model is not zero. 
 
 ### 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
