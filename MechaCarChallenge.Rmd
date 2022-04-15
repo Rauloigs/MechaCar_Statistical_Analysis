@@ -1,0 +1,58 @@
+
+
+```{r}
+# Importing Libraries
+library(knitr)
+library(tidyverse)
+library(dplyr)
+```
+
+```{r}
+# Import and read mpg csv file
+mechacar_mpg <- read.csv(file='MechaCar_mpg.csv', check.names = F, stringsAsFactors = F)
+```
+
+```{r}
+# Perform linear regression, pass all six variables of mechacar_mp
+lm(mpg ~ AWD + ground_clearance + spoiler_angle + vehicle_weight + vehicle_length, data=mechacar_mpg)
+```
+```{r}
+# Determine the p-value and the r-squared value
+summary(lm(mpg ~ AWD + ground_clearance + spoiler_angle + vehicle_weight + vehicle_length, data=mechacar_mpg))
+```
+```{r}
+# Import and read Suspension_Coil.csv
+suspension_coil <- read.csv(file = 'Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+```
+
+```{r}
+# Summarizing the PSI column 
+total_summary <- suspension_coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+```
+
+```{r}
+# Summarizing the PSI column for each Lot 
+lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+```
+
+```{r}
+# Using t.test() determine if PSI across all lots is statistically different from population mean
+t.test(suspension_coil$PSI)
+```
+
+```{r}
+# Lot1 vs Population mean
+lot1_subset <- subset(suspension_coil, Manufacturing_Lot == "Lot1")
+t.test(suspension_coil$PSI, lot1_subset$PSI )
+```
+```{r}
+# Lot2 vs Population mean
+lot2_subset <- subset(suspension_coil, Manufacturing_Lot == "Lot2")
+t.test(suspension_coil$PSI, lot2_subset$PSI )
+```
+```{r}
+# Lot3 vs Population mean
+lot3_subset <- subset(suspension_coil, Manufacturing_Lot == "Lot3")
+t.test(suspension_coil$PSI, lot3_subset$PSI )
+```
+
