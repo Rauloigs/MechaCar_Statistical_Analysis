@@ -34,6 +34,7 @@ This model does predict effectively. If we observe the *r-squared* value we have
 <img width="447" alt="Captura de Pantalla 2022-04-15 a la(s) 11 32 51" src="https://user-images.githubusercontent.com/84519822/163596702-c8f2d472-95cb-4fb3-9e84-5ef78c5b4b5b.png">
 
 
+
 ## Summary Statistics on Suspension Coils
 
 The purpose in this analysis is to to determine if the manufacturing process is consistent across production lots. The data we have isthe weight capacities of multiple suspension coils from different lots. 
@@ -44,10 +45,14 @@ The main issue is the following:
 To start answering, we first need to take a look at our two table results: 
 
 **1. The summary of all three lots**
+
 <img width="334" alt="Captura de Pantalla 2022-04-15 a la(s) 13 06 00" src="https://user-images.githubusercontent.com/84519822/163605859-5e003587-db81-4771-82ff-11f545e70724.png">
 
+
 **2. The summary of each lot individualy.
+
 <img width="489" alt="Captura de Pantalla 2022-04-15 a la(s) 13 08 59" src="https://user-images.githubusercontent.com/84519822/163605917-1565e70a-11cf-4fa8-9ee5-9fad8dae3d6c.png">
+
 
 Lets start from the basic. **Suspension coils Variance** must not exceed *100 PSI*, and this parameter is met in the first table where we observe all of the three lots variance to be *62.2935*. So concluding taking into account the three lots individually they are meeting the production requirements. 
 
