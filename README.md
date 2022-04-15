@@ -4,7 +4,7 @@
 
 In this section we are designing a **Linear Model** to predict the **mpg** of MchaCar prototypes.
 
-The data has 6 variables which we are going to use for our model, so we are talking about a multiple linear regression. To be more precise in our analysis outputs we are going to review the three points:
+The data has 6 variables which we are going to use for our model, so we are talking about a multiple linear regression. To be more precise in our analysis outputs we are going to review three points:
 
 ### 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
