@@ -6,7 +6,7 @@ In this section we are designing a **Linear Model** to predict the **mpg** of Mc
 
 The data has 6 variables which we are going to use for our model, so we are talking about a multiple linear regression. To be more precise in our analysis outputs we are going to review the three points:
 
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+### 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
 Firstly we provide the *lm() function* with the variables and data needed as shown below.
 
@@ -24,8 +24,10 @@ The next step to be able to provide the information of which variables provided 
 As we know, each *Pr(>|t|)* represents the probability that each coeffincient contributes a random amount of variance to the linear model. According to our results, **Ground Clearance and Vehicle Length provide a non random amount of variance to the mpg values**. This implies that both variables have a significant impact on the mpg values.
 
 
-- Is the slope of the linear model considered to be zero? Why or why not?
-- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+### 2. Is the slope of the linear model considered to be zero? Why or why not?
+As you will see in the results of point three, our *p-value* is *5.35e-11*. This parameter is sufficient to reject the null hypothesis, which means that the slope of our linear model is not zero. 
+
+### 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 This model does predict effectively. If we observe the *r-squared* value we have a significant amount (*0.7149*). Nevertheless it might be useful to add another variables to the model, if Ground Clearance and vehicle Length are not convincing enough to the manufacturing experts. Additionally you can observe the *r-squared* value and *p-value* in the image below: 
 
