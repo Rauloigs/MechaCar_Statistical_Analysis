@@ -49,7 +49,7 @@ To start answering, we first need to take a look at our two table results:
 <img width="334" alt="Captura de Pantalla 2022-04-15 a la(s) 13 06 00" src="https://user-images.githubusercontent.com/84519822/163605859-5e003587-db81-4771-82ff-11f545e70724.png">
 
 
-**2. The summary of each lot individualy.
+**2. The summary of each lot individualy.**
 
 <img width="489" alt="Captura de Pantalla 2022-04-15 a la(s) 13 08 59" src="https://user-images.githubusercontent.com/84519822/163605917-1565e70a-11cf-4fa8-9ee5-9fad8dae3d6c.png">
 
