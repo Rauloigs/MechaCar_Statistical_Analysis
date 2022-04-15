@@ -68,18 +68,44 @@ While testing test for all lots, there is evidence to reject the null hypothesis
 
 <img width="306" alt="Captura de Pantalla 2022-04-15 a la(s) 13 47 00" src="https://user-images.githubusercontent.com/84519822/163622540-60428b2a-b40a-4803-b5c5-19fe796516fc.png">
 
-For **Lot1** we observe there is not evidence to reject the null hypothesis, there for, we can state Lot 1 is not statiscally different to the whole population. 
+For **Lot1** we observe there is evidence to reject the null hypothesis, there for, we can state Lot 1 is statiscally similar to the whole population. 
 
 <img width="510" alt="Captura de Pantalla 2022-04-15 a la(s) 14 10 45" src="https://user-images.githubusercontent.com/84519822/163622594-e8078b78-6cb7-45ed-89ef-3cd4c24b9db5.png">
 
 
-For **Lot2** we observe it is exactly as with **Lot1** there is not evidence to reject the null hypothesis, there for, we can state Lot 2 is not statiscally different to the whole population. Take a closer look to the results in the following picture. 
+For **Lot2** we observe it is exactly as with **Lot1** there is evidence to reject the null hypothesis, there for, we can state Lot 2 is statiscally similar to the whole population. Take a closer look to the results in the following picture. 
 
 <img width="517" alt="Captura de Pantalla 2022-04-15 a la(s) 14 10 56" src="https://user-images.githubusercontent.com/84519822/163622608-26593656-c66e-4320-8280-4a7034deccca.png">
 
 
-Again for **Lot3** there is not evidence to reject the null hypothesis, there for, we can state Lot 2 is not statiscally different to the whole population. Take a closer look to the results in the following picture. Though there is something important to point out, because in this lot the *p-value* is quite larger than those in the other lots. 
+Again for **Lot3** there is enough evidence to reject the null hypothesis, there for, we can state Lot 2 is statiscally similart to the whole population. Take a closer look to the results in the following picture. Though there is something important to point out, because in this lot the *p-value* is quite larger than those in the other lots. 
 
 <img width="499" alt="Captura de Pantalla 2022-04-15 a la(s) 14 11 08" src="https://user-images.githubusercontent.com/84519822/163622575-c419089d-c5c8-42c0-96d5-261972f7ad24.png">
+
+## Study Design: MechaCar vs Competition
+
+For this part we are going to propose a Study Design to see how MechaCar performs against the competition.  for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+To explain each detail of the Study we are going over 4 question: 
+
+**1. What metric or metrics are you going to test?**
+Now a days it is important the environmental effect of the cars´ performance, this also has an impact in how efficient is it with gas consumption. So the metrics that are going to be use for this analysis are: 
+
+- Highway fuel efficiency
+- City fuel efficiency
+- Price
+- Horse Power
+- Type of Motor
+- Safety Ratings
+
+**2. What is the null hypothesis or alternative hypothesis?**
+The **Ho** will be: There a difference between pricing and efficiency
+
+**3. What statistical test would you use to test the hypothesis? And why?**
+I would implement a **T-test** (*One Side* and *Two side*) because I would also like to know if there is a greater or lower difference. 
+And also an **ANOVA Test** so I can test with the different paramenters considered to have an impact on the efficiency of the car such as *hp*, *City/ Highway Efficiency*, and *Type of Motor* for example. 
+
+**4. What data is needed to run the statistical test?**
+All of the metrics mentioned above, probably also another categorical like electric car or not electric, though this would make the analysis a bit more complex (Could be necessary to test with a *Chi-Squared Test*). The data should be from all of the competitors with same target audience. 
 
 
