@@ -1,5 +1,7 @@
 # MechaCar Statistical Analysis
 
+
+
 ## Linear Regression to Predict MPG
 
 In this section we are designing a **Linear Model** to predict the **mpg** of MchaCar prototypes.
@@ -44,17 +46,40 @@ The main issue is the following:
 
 To start answering, we first need to take a look at our two table results: 
 
-**1. The summary of all three lots**
+**Table 1: The Summary of all Three Lots**
 
 <img width="334" alt="Captura de Pantalla 2022-04-15 a la(s) 13 06 00" src="https://user-images.githubusercontent.com/84519822/163605859-5e003587-db81-4771-82ff-11f545e70724.png">
 
 
-**2. The summary of each lot individualy.**
+**2. Table 2: The Summary of each Lot Individualy**
 
 <img width="489" alt="Captura de Pantalla 2022-04-15 a la(s) 13 08 59" src="https://user-images.githubusercontent.com/84519822/163605917-1565e70a-11cf-4fa8-9ee5-9fad8dae3d6c.png">
 
 
 Lets start from the basic. **Suspension coils Variance** must not exceed *100 PSI*, and this parameter is met in the first table where we observe all of the three lots variance to be *62.2935*. So concluding taking into account the three lots individually they are meeting the production requirements. 
 
-Now, is there any lot making noise individually, or in oder words not meeting the variance requirements? Lets first take a look at our second table. After diving in it we see immediatly a red light in **Lot 3** the variance is *170.2861* which completely is not meeting the required output. Lot 1 and Lot 3 have quite a low variance values and this helps to agree all tests where passed, nevertheless is neccesarily to pay attention to Lot 3. 
+Now, is there any **Lot** making noise individually, in oder words, not meeting the variance requirements? Lets first take a look at our second table. After diving in it we see immediatly a red light in **Lot 3** where the variance is *170.2861*. This is completely not meeting the required output. **Lot1** and **Lot3** have quite a low variance value and this helps to agree all tests as one agreed with the expectations, nevertheless it is neccesary to pay attention to **Lot3**. 
+
+
+
+## T-Tests on Suspension Coils
+
+While testing test for all lots, there is evidence to reject the null hypothesis and we can confirm that the means are statiscally different. You can see the *p-value* (image below) being lower than an assumpted significance level of *0.05%*.
+
+<img width="306" alt="Captura de Pantalla 2022-04-15 a la(s) 13 47 00" src="https://user-images.githubusercontent.com/84519822/163622540-60428b2a-b40a-4803-b5c5-19fe796516fc.png">
+
+For **Lot1** we observe there is not evidence to reject the null hypothesis, there for, we can state Lot 1 is not statiscally different to the whole population. 
+
+<img width="510" alt="Captura de Pantalla 2022-04-15 a la(s) 14 10 45" src="https://user-images.githubusercontent.com/84519822/163622594-e8078b78-6cb7-45ed-89ef-3cd4c24b9db5.png">
+
+
+For **Lot2** we observe it is exactly as with **Lot1** there is not evidence to reject the null hypothesis, there for, we can state Lot 2 is not statiscally different to the whole population. Take a closer look to the results in the following picture. 
+
+<img width="517" alt="Captura de Pantalla 2022-04-15 a la(s) 14 10 56" src="https://user-images.githubusercontent.com/84519822/163622608-26593656-c66e-4320-8280-4a7034deccca.png">
+
+
+Again for **Lot3** there is not evidence to reject the null hypothesis, there for, we can state Lot 2 is not statiscally different to the whole population. Take a closer look to the results in the following picture. Though there is something important to point out, because in this lot the *p-value* is quite larger than those in the other lots. 
+
+<img width="499" alt="Captura de Pantalla 2022-04-15 a la(s) 14 11 08" src="https://user-images.githubusercontent.com/84519822/163622575-c419089d-c5c8-42c0-96d5-261972f7ad24.png">
+
 
